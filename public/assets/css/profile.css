@@ -1,0 +1,60 @@
+.carousel-item .card img{
+    height: 200px;
+    width: auto;
+}
+.bg-black{
+    padding: 10px;
+}
+.round-border-primary{
+    border: 2px solid #ffc107;
+    border-radius: 51px !important;
+}
+.lablel1{
+    border: 2px dashed white;
+    border-radius: 20px;
+}
+.text-white-big{
+    color: white !important;
+    font-size: 30px !important;
+}
+.mainrow{
+    background: white;
+    margin-right: 0px;
+    box-shadow: 0px 0px 61px rgb(127 137 161 / 25%);
+    padding: 9px;
+    border-radius: 20px;
+}
+.lablel1 img{
+    height: 43px;
+}
+.test {
+    font-family: sans-serif;
+    font-size: 54px !important;
+    color: #ffc107 !important;
+    text-orientation: upright;
+    text-align: start;
+    writing-mode: vertical-lr;
+    margin: 0px auto;
+}
+.share-panel{
+    background: white;
+    box-shadow: 0px 0px 61px rgb(127 137 161 / 25%);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.fa-share-alt{
+    background: black;
+    color: white;
+    font-size: 23px;
+    width: 40px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 40px;
+}
+.share-panel-text{
+    color: white !important;
+}
+.form-check-input{
+    font-size: 21px;
+}
