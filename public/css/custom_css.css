@@ -910,6 +910,15 @@ p{
 .shadow-2{
     box-shadow: 0 .3rem .2rem rgba(0,0,0,.15) !important;
 }
+
+.password_show i{
+    position: absolute;
+    color: black;
+    top: 0;
+    right: 26px;
+    margin-top: 12px;
+    cursor: pointer;
+}
 /* @media only screen and (min-width: 1390px) {
     .container-fluid{
         width: 1390px;

@@ -227,5 +227,9 @@ die;
         <button class="su_button"><b>Kirjaudu</b></button>
 
     </div>
+
+    @elseif (str_contains($url,'subscription') != '')
+
+    
     @endif
 </div>
