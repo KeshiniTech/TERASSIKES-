@@ -49,12 +49,12 @@ $(document).ready(function () {
         var activePage = url;
         $('.deshboard_bar .nav-item a').each(function () {
             var linkPage = this.href;
-            $(".deshboard_bar").each(function(){
-                if($(this).attr('attr') == 'setting-bar'){
+            $(".deshboard_bar").each(function () {
+                if ($(this).attr('attr') == 'setting-bar') {
                     $('[attr="setting-menu"]').addClass('active');
                 }
             });
-            if($('[attr="setting-menu"]').attr('href') == activePage){
+            if ($('[attr="setting-menu"]').attr('href') == activePage) {
                 $('a[attr="pg-1"]').addClass('active');
             }
             if (activePage == linkPage) {
@@ -65,4 +65,16 @@ $(document).ready(function () {
 })
 
 
+$('.password_show i').on('click', function () {
+    $('.password_show i').show();
 
+    hideORshow = $(this).attr('attr');
+
+    if (hideORshow == 'show') {
+        $('.password_show input').attr('type', 'text');
+        $('[attr="' + hideORshow + '"]').hide();
+    } else {
+        $('.password_show input').attr('type', 'password');
+        $('[attr="' + hideORshow + '"]').hide();
+    }
+});

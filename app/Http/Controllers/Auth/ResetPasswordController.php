@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class ResetPasswordController extends Controller
 {
@@ -25,15 +28,16 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = RouteServiceProvider::HOME;
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    protected function redirectTo()
     {
-        $this->middleware('guest');
+        if (auth()->user()->role == 'superadmin') {
+            return redirect()->route('superadmin');
+        } elseif (auth()->user()->role == 'admin') {
+            return redirect()->route('admin');
+        } elseif (auth()->user()->role == 'user') {
+            return redirect()->route('home');
+        }
     }
 }
